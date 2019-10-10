@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title-line {
+  height: 5px;
+  width: 50px;
+  background-color: #393939;
+  margin: 10px 0;
+}
+
+header {
+  visibility: none;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bee.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .admin-login-wrapper {
+  width: 300px;
+  height: 350px;
+  margin-right: 10%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px #8d8d8d;
+          box-shadow: 2px 2px 2px #8d8d8d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .admin-login-wrapper .admin-login {
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .admin-login-wrapper .admin-login .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #393939;
+  font-weight: bolder;
+}
+
+header .admin-login-wrapper .admin-login .avatar img {
+  width: 50px;
+}
+
+header .admin-login-wrapper .admin-login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .admin-login-wrapper .admin-login form .admin {
+  padding: 5px;
+  color: #8d8d8d;
+}
+
+header .admin-login-wrapper .admin-login form .admin input {
+  border: 0;
+  margin-left: 10px;
+  background: none;
+  width: 60px;
+}
+
+header .admin-login-wrapper .admin-login form .admin input:focus {
+  outline: none;
+}
+
+header .admin-login-wrapper .admin-login form .password {
+  border: 1px solid #8d8d8d;
+  padding: 5px;
+  color: #8d8d8d;
+}
+
+header .admin-login-wrapper .admin-login form .password input {
+  border: 0;
+  margin-left: 10px;
+}
+
+header .admin-login-wrapper .admin-login form .password input:focus {
+  outline: none;
+}
+
+header .admin-login-wrapper .admin-login form button {
+  background-color: #8d8d8d;
+  border: none;
+  border-radius: 7px;
+  padding: 5px 20px;
+  color: #393939;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+header .admin-login-wrapper .admin-login form button:hover {
+  background-color: #393939;
+  color: #8d8d8d;
+}
+/*# sourceMappingURL=header.css.map */
