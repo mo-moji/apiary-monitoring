@@ -11,25 +11,19 @@
 </head>
 <body>
 
-<header>
-  <div class="admin-login-wrapper">
-    <div class="admin-login">
-      <div class="avatar">
-        <img src="images/logo-orange.png" alt="">
-      </div>
-      <form action="include/login.php" method="post">
-        <div class="admin">
-          <i class="fas fa-user"></i>
-          <input type="text" placeholder="Admin" disabled>
-        </div>
-        <div class="password">
-          <i class="fas fa-lock"></i>
-          <input type="password" name="login-password" placeholder="Password">
-        </div>
-        <button type="submit">Login</button>
-      </form>
-     </div>
-    </div>
-</header>
+<?php 
+  include 'include/connect.php';
+
+  $sql = "SELECT * FROM apiary_admin;";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      $adminName = $row['admin_name'];
+      $adminPass = $row['admin_pass'];
+      $securityQuestion = $row['security_question'];
+      $securityQuestionAnswer = $row['security_question_answer'];
+    }
+  }
+ ?>
 
   

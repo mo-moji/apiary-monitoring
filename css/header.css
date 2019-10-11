@@ -13,7 +13,14 @@ html {
 .title-line {
   height: 5px;
   width: 50px;
-  background-color: #393939;
+  background-color: #ff7f00;
+  margin: 10px 0;
+}
+
+.title-line-small {
+  height: 2px;
+  width: 20px;
+  background-color: #ff7f00;
   margin: 10px 0;
 }
 
@@ -122,7 +129,6 @@ header .admin-login-wrapper .admin-login form .admin input {
   border: 0;
   margin-left: 10px;
   background: none;
-  width: 60px;
 }
 
 header .admin-login-wrapper .admin-login form .admin input:focus {

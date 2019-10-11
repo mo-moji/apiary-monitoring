@@ -1,4 +1,12 @@
 <main>
+
+  <div class="admin-account-wrapper">
+    <div class="admin-account">
+      <p class="admin-name"><?php echo $adminName;?></p>
+      <a class="admin-icon"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </div>
+ <?php include 'admin-settings.php';?>
   <div class="hive-wrapper">
     <div class="hive-buttons">
       <div class="apiary-title">

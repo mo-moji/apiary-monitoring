@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-$primary-color:rgb(255, 219, 57);
+$primary-color:#ff7f00;
 $light-black:#8d8d8d;
 $dark-gray:#393939;
 *{
@@ -28,16 +28,32 @@ html{
   justify-content: center;
   align-items: center;
 }
+@mixin button{
+  button {
+    background: none;
+    border: none;
+    background-color: $primary-color;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    transition: .5s;
+    cursor: pointer;
+  }
 
+  button:hover {
+    background-color: #ff9d3b;
+  }
+}
 .title-line {
   height: 5px;
   width: 50px;
-  background-color: #ff7f00;
+  background-color: $primary-color;
   margin: 10px 0;
 }
 .title-line-small {
   height: 2px;
   width: 20px;
-  background-color: #ff7f00;
+  background-color: $primary-color;
   margin: 10px 0;
 }

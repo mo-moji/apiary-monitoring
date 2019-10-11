@@ -155,7 +155,6 @@ header .admin-login-wrapper .admin-login form .admin input {
   border: 0;
   margin-left: 10px;
   background: none;
-  width: 60px;
 }
 
 header .admin-login-wrapper .admin-login form .admin input:focus {
@@ -193,20 +192,264 @@ header .admin-login-wrapper .admin-login form button:hover {
   color: #8d8d8d;
 }
 
-body {
-  background-color: black;
-}
-
 main {
   width: 100%;
   min-height: 100vh;
   background-color: white;
 }
 
+main .admin-account-wrapper {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 20px;
+}
+
+main .admin-account-wrapper .admin-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  color: #393939;
+}
+
+main .admin-account-wrapper .admin-account .admin-name {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .admin-account-wrapper .admin-account p {
+  letter-spacing: 3px;
+}
+
+main .admin-account-wrapper .admin-account a {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+main .admin-settings-wrapper {
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transition-timing-function: cubic-bezier(0.26, 0.15, 0.43, 1.3);
+          transition-timing-function: cubic-bezier(0.26, 0.15, 0.43, 1.3);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  z-index: 3;
+  -webkit-box-shadow: 2px 2px 5px #8d8d8d;
+          box-shadow: 2px 2px 5px #8d8d8d;
+  border-bottom: 5px solid #ff7f00;
+}
+
+main .admin-settings-wrapper .close-window {
+  background: none;
+  border: none;
+  position: relative;
+  top: -20px;
+  left: 100%;
+  cursor: pointer;
+}
+
+main .admin-settings-wrapper .admin-settings form hr {
+  margin-bottom: 10px;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-name .admin-icon {
+  font-size: 50px;
+  color: #8d8d8d;
+  margin-bottom: 10px;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-name a {
+  font-size: 14px;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper {
+  overflow: hidden;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper .admin-change-name {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  margin: 10px;
+  text-align: center;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper .admin-change-name input {
+  padding: 2px;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper .admin-change-name button {
+  background: none;
+  border: none;
+  background-color: #ff7f00;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper .admin-change-name button:hover {
+  background-color: #ff9d3b;
+}
+
+main .admin-settings-wrapper .admin-settings form .admin-change-name-wrapper .admin-change-name a {
+  font-size: 13px;
+}
+
+main .admin-settings-wrapper .admin-settings form .security-questions .title {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main .admin-settings-wrapper .admin-settings form .security-questions p {
+  font-size: 14px;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper {
+  margin: 10px;
+  overflow: hidden;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper .select-question {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper .select-question button {
+  background: none;
+  border: none;
+  background-color: #ff7f00;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper .select-question button:hover {
+  background-color: #ff9d3b;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper p {
+  font-size: 14px;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper a {
+  font-size: 13px;
+}
+
+main .admin-settings-wrapper .admin-settings form .select-questions-wrapper select {
+  margin: 5px 0;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-button {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper {
+  overflow: hidden;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password .error {
+  font-size: 13px;
+  color: #ff3232;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password input {
+  margin: 5px 0;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password button {
+  background: none;
+  border: none;
+  background-color: #ff7f00;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password button:hover {
+  background-color: #ff9d3b;
+}
+
+main .admin-settings-wrapper .admin-settings form .change-password-wrapper .change-password a {
+  font-size: 14px;
+}
+
+main .admin-settings-wrapper .admin-settings form .logout-btn {
+  position: relative;
+  top: -20px;
+  left: 90%;
+  background-color: #ff3232;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .admin-settings-wrapper .admin-settings form .logout-btn:hover {
+  background-color: #fd6363;
+}
+
 main .hive-wrapper {
   width: 100%;
   height: 100vh;
-  padding: 100px;
+  padding: 30px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -13,7 +13,64 @@ const system = ()=>{
   const hive2Window = document.querySelector(".hive-2-wrapper");
 
   const harvest = document.querySelectorAll("td.harvest");
+
+  const adminChangeNameBtn = document.getElementById("admin-change-name-button");
+  const adminChangeName = document.querySelector(".admin-change-name");
+  const adminChangeNameCloseBtn = document.getElementById("change-name-cancel");
+
+  const selectQuestionsBtn = document.getElementById("select-questions-button");
+  const selectQuestions = document.querySelector(".select-question");
+  const selectQuestionCloseBtn = document.getElementById("close-questions");
+
+  const changePasswordBtn = document.getElementById("change-password-button");
+  const changePassword = document.querySelector(".change-password");
+  const changePasswordCloseBtn = document.getElementById("close-change-password");
+
+  const closeAdminWindow = document.querySelector(".close-window");
+  const adminWindow = document.querySelector(".admin-settings-wrapper");
+  const openAdminWindow = document.querySelector(".admin-icon");
+  const adminName = document.querySelector(".admin-name");
   //initializations end
+
+  /////js for admin window//////////////////////////////////////////
+  closeAdminWindow.addEventListener("click",()=>{
+    adminWindow.style.transform = "translateY(-200%)";
+  })
+   openAdminWindow.addEventListener("click", () => {
+     adminWindow.style.transform = "translateY(0)";
+   })
+   openAdminWindow.addEventListener("mouseenter", () => {
+     adminName.style.letterSpacing = "10px";
+   })
+   openAdminWindow.addEventListener("mouseleave", () => {
+     adminName.style.letterSpacing = "2px";
+   })
+
+
+  adminChangeNameBtn.addEventListener("click",()=>{
+    adminChangeName.style.transform = "translateY(0)";
+  })
+  adminChangeNameCloseBtn.addEventListener("click",()=>{
+    adminChangeName.style.transform = "translateY(-200%)";
+  })
+
+  selectQuestionsBtn.addEventListener("click", () => {
+    selectQuestions.style.transform = "translateY(0)";
+  })
+  selectQuestionCloseBtn.addEventListener("click", () => {
+    selectQuestions.style.transform = "translateY(-100%)";
+  })
+
+  changePasswordBtn.addEventListener("click", () => {
+    changePassword.style.transform = "translateY(0)";
+  })
+  changePasswordCloseBtn.addEventListener("click", () => {
+    changePassword.style.transform = "translateY(-100%)";
+  })
+  /////js for admin window end//////////////////////////////////////
+
+
+
 
   //Hive table Ready or Not Ready JS
   for (let i = 0; i < harvest.length; i++) {

@@ -1,8 +1,14 @@
-<?php require 'header.php';
-$login = true;
+<?php
+  session_start();
+  require 'header.php';
+  $login = $_SESSION['login'];
 
-if ($login) {
-  include 'include/main.php';
-}
+  if ($login == false) {
+    include 'include/landing.php';
+  }elseif ($login) {
+    include 'include/main.php';
+  }
+  
+  require 'footer.php';
+
 ?>
-<?php require 'footer.php';?>

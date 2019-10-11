@@ -1,16 +1,163 @@
 @import 'initialization.scss';
 @import 'header.scss';
-body{
-  background-color: black;
-}
 main{
   width: 100%;
   min-height: 100vh;
   background-color: white;
+  .admin-account-wrapper{
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    .admin-account{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 17px;
+      color: $dark-gray;
+      .admin-name{
+        transition: .5s;
+      }
+      p{
+        letter-spacing: 3px;
+      }
+      a{
+        font-size: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }//admin-account-wrapper css
+  .admin-settings-wrapper{
+    transition: .8s;
+    transition-timing-function: cubic-bezier(0.26, 0.15, 0.43, 1.30);
+    transform: translateY(-200%);
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 2px 2px 5px $light-black;
+    border-bottom: 5px solid $primary-color;
+    .close-window{
+      background:none;
+      border:none;
+      position: relative;
+      top: -20px;
+      left: 100%;
+      cursor: pointer;
+    }
+    .admin-settings{
+      form{
+        hr{
+          margin-bottom: 10px;
+        }
+        .admin-name{
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
+          .admin-icon{
+            font-size:50px;
+            color: $light-black;
+            margin-bottom: 10px;
+          }
+          a{
+            font-size: 14px;
+          }   
+        }
+        .admin-change-name-wrapper{
+          overflow: hidden;
+          .admin-change-name{
+          transition: .5s;
+          transform: translateY(-50px);
+          margin: 10px;
+          text-align: center;
+            input{
+              padding: 2px;
+            }
+            @include button;
+            a{
+              font-size: 13px;
+            }
+          }
+        }//admin-change-name-wrapper css end
+
+        .security-questions{
+          .title{
+            font-weight: bold;
+            letter-spacing: 2px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .select-questions-wrapper{
+          margin: 10px;
+          overflow: hidden;
+          .select-question{
+            transform: translateY(-200%);
+            transition: .5s;
+            @include button;
+          }
+          p{
+            font-size: 14px;
+          }
+          a {
+            font-size: 13px;
+          }
+          select{
+            margin: 5px 0;
+          }
+        }//select-questions-wrapper css end
+
+        .change-password-button{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .change-password-wrapper{
+          overflow: hidden;
+          .change-password{
+            transform: translateY(-100%);
+            transition: .5s;
+            .error{
+              font-size: 13px;
+              color: rgb(255, 50, 50);
+            }
+            input{
+              margin:5px 0;
+            }
+             @include button;
+             a{
+               font-size: 14px;
+             }
+          }
+        }
+        .logout-btn{
+          position: relative;
+          top: -20px;
+          left: 90%;
+          background-color:rgb(255, 50, 50);
+          border: none;
+          padding: 5px;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: .5s;
+        }
+        .logout-btn:hover{
+          background-color:rgb(253, 99, 99);
+        }
+        }//form css end
+      }
+    }
   .hive-wrapper {
     width: 100%;
     height: 100vh;
-    padding: 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;

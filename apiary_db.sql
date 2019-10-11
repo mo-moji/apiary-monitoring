@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2019 at 07:00 AM
+-- Generation Time: Oct 11, 2019 at 11:49 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -32,15 +32,17 @@ CREATE TABLE `apiary_admin` (
   `id` int(11) NOT NULL,
   `admin_name` varchar(256) NOT NULL,
   `admin_pass` varchar(256) NOT NULL,
-  `date_created` datetime DEFAULT NULL
+  `date_created` datetime DEFAULT NULL,
+  `security_question` varchar(256) DEFAULT NULL,
+  `security_question_answer` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `apiary_admin`
 --
 
-INSERT INTO `apiary_admin` (`id`, `admin_name`, `admin_pass`, `date_created`) VALUES
-(1, 'admin', 'password', '2019-10-10 07:53:58');
+INSERT INTO `apiary_admin` (`id`, `admin_name`, `admin_pass`, `date_created`, `security_question`, `security_question_answer`) VALUES
+(1, 'Admin', 'password', '2019-10-10 07:53:58', 'Where were you when you had your first kiss?', 'Theatre');
 
 -- --------------------------------------------------------
 
