@@ -3,6 +3,7 @@
     <div class="admin-login">
       <div class="avatar">
         <img src="images/logo-orange.png" alt="">
+        <p>Apiary Monitoring</p>
       </div>
       <form action="include/login.php" method="post">
         <div class="admin">

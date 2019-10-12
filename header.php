@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<?php 
+<?php
+  session_start();
   include 'include/connect.php';
 
   $sql = "SELECT * FROM apiary_admin;";

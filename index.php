@@ -1,11 +1,9 @@
 <?php
-  session_start();
-  require 'header.php';
-  $login = $_SESSION['login'];
-
-  if ($login == false) {
+  require_once 'header.php';
+  
+  if (!$_SESSION['login']) {
     include 'include/landing.php';
-  }elseif ($login) {
+  }elseif ($_SESSION['login']) {
     include 'include/main.php';
   }
   

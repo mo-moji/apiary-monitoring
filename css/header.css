@@ -96,8 +96,13 @@ header .admin-login-wrapper .admin-login .avatar {
   height: 100px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #393939;
-  font-weight: bolder;
+  text-align: center;
+}
+
+header .admin-login-wrapper .admin-login .avatar p {
+  color: #8d8d8d;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 header .admin-login-wrapper .admin-login .avatar img {

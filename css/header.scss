@@ -34,13 +34,17 @@ header {
         width: 100px;
         height: 100px;
         justify-content: space-around;
-
+        text-align: center;
+        p{
+          color: $light-black;
+          font-weight: lighter;
+          letter-spacing: 2px;
+        }
+        
         img {
           width: 50px;
         }
-
-        color: $dark-gray;
-        font-weight: bolder;
+        
       }
 
       //avatar css

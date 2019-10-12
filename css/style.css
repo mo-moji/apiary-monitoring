@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -122,8 +124,13 @@ header .admin-login-wrapper .admin-login .avatar {
   height: 100px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #393939;
-  font-weight: bolder;
+  text-align: center;
+}
+
+header .admin-login-wrapper .admin-login .avatar p {
+  color: #8d8d8d;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 header .admin-login-wrapper .admin-login .avatar img {
@@ -242,12 +249,12 @@ main .admin-settings-wrapper {
   transition: .8s;
   -webkit-transition-timing-function: cubic-bezier(0.26, 0.15, 0.43, 1.3);
           transition-timing-function: cubic-bezier(0.26, 0.15, 0.43, 1.3);
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   top: 10%;
   left: 35%;
-  height: 500px;
+  height: 350px;
   width: 500px;
   padding: 30px;
   border-radius: 10px 10px 0 0;
@@ -255,7 +262,6 @@ main .admin-settings-wrapper {
   z-index: 3;
   -webkit-box-shadow: 2px 2px 5px #8d8d8d;
           box-shadow: 2px 2px 5px #8d8d8d;
-  border-bottom: 5px solid #ff7f00;
 }
 
 main .admin-settings-wrapper .close-window {
@@ -480,6 +486,32 @@ main .hive-wrapper .hives-windows {
   width: 70%;
 }
 
+main .hive-wrapper .hives-windows .apiary-image {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .hive-wrapper .hives-windows .apiary-image img {
+  width: 100%;
+}
+
+main .hive-wrapper .hives-windows .apiary-image button {
+  position: relative;
+  top: 30px;
+  left: 93%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
 main .hive-wrapper .hives-windows .hive-window-wrappers {
   -webkit-transition: 1s;
   transition: 1s;
@@ -509,6 +541,23 @@ main .hive-wrapper .hives-windows .hive-window-wrappers table td {
   padding: 5px;
 }
 
+main .hive-wrapper .hives-windows .hive-window-wrappers table td button {
+  background: none;
+  border: none;
+  background-color: #ff7f00;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+main .hive-wrapper .hives-windows .hive-window-wrappers table td button:hover {
+  background-color: #ff9d3b;
+}
+
 main .hive-wrapper .hives-windows .hive-window-wrappers table th {
   text-align: center;
   font-size: 18px;
@@ -530,6 +579,57 @@ main .hive-wrapper .hives-windows .hive-2-wrapper {
   right: 0;
   top: -100%;
   position: relative;
+}
+
+.about-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bee-bg0000.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.about-wrapper .about {
+  padding: 0 100px;
+}
+
+.about-wrapper .about .left-content {
+  color: #393939;
+}
+
+.about-wrapper .about .left-content h1 {
+  font-size: 80px;
+  letter-spacing: 30px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-wrapper .about .left-content h2 {
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.about-wrapper .about .left-content .paragraph {
+  margin-top: 20px;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+  padding: 30px;
+  margin: 40px;
+}
+
+.space {
+  height: 20vh;
+  width: 100%;
+  background-color: #ff7f00;
 }
 
 footer {

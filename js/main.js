@@ -18,9 +18,9 @@ const system = ()=>{
   const adminChangeName = document.querySelector(".admin-change-name");
   const adminChangeNameCloseBtn = document.getElementById("change-name-cancel");
 
-  const selectQuestionsBtn = document.getElementById("select-questions-button");
-  const selectQuestions = document.querySelector(".select-question");
-  const selectQuestionCloseBtn = document.getElementById("close-questions");
+  // const selectQuestionsBtn = document.getElementById("select-questions-button");
+  // const selectQuestions = document.querySelector(".select-question");
+  // const selectQuestionCloseBtn = document.getElementById("close-questions");
 
   const changePasswordBtn = document.getElementById("change-password-button");
   const changePassword = document.querySelector(".change-password");
@@ -30,14 +30,35 @@ const system = ()=>{
   const adminWindow = document.querySelector(".admin-settings-wrapper");
   const openAdminWindow = document.querySelector(".admin-icon");
   const adminName = document.querySelector(".admin-name");
+
+  const openApiaryImage = document.querySelectorAll("button.open-apiary-image");
+  const closeApiaryImage = document.querySelectorAll("button.close-apiary-image");
+  const apiaryImage = document.querySelectorAll("div.apiary-image")
   //initializations end
+
+  ////// js for apiary image/////////////////////////////////////////
+  for (let i = 0; i < apiaryImage.length; i++) {
+    openApiaryImage[i].addEventListener("click", () => {
+      apiaryImage[i].style.opacity = "1";
+      apiaryImage[i].style.pointerEvents = "all";
+    })
+    closeApiaryImage[i].addEventListener("click", () => {
+      apiaryImage[i].style.opacity = "0";
+      apiaryImage[i].style.pointerEvents = "none";
+    })
+    
+  }
+  ////// js for apiary image end/////////////////////////////////////
+
 
   /////js for admin window//////////////////////////////////////////
   closeAdminWindow.addEventListener("click",()=>{
-    adminWindow.style.transform = "translateY(-200%)";
+    adminWindow.style.opacity = "0";
+    adminWindow.style.pointerEvents = "none";
   })
    openAdminWindow.addEventListener("click", () => {
-     adminWindow.style.transform = "translateY(0)";
+     adminWindow.style.opacity = "1";
+     adminWindow.style.pointerEvents = "all";
    })
    openAdminWindow.addEventListener("mouseenter", () => {
      adminName.style.letterSpacing = "10px";
@@ -54,12 +75,12 @@ const system = ()=>{
     adminChangeName.style.transform = "translateY(-200%)";
   })
 
-  selectQuestionsBtn.addEventListener("click", () => {
-    selectQuestions.style.transform = "translateY(0)";
-  })
-  selectQuestionCloseBtn.addEventListener("click", () => {
-    selectQuestions.style.transform = "translateY(-100%)";
-  })
+  // selectQuestionsBtn.addEventListener("click", () => {
+  //   selectQuestions.style.transform = "translateY(0)";
+  // })
+  // selectQuestionCloseBtn.addEventListener("click", () => {
+  //   selectQuestions.style.transform = "translateY(-100%)";
+  // })
 
   changePasswordBtn.addEventListener("click", () => {
     changePassword.style.transform = "translateY(0)";

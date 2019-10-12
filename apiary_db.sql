@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2019 at 11:49 AM
+-- Generation Time: Oct 12, 2019 at 08:34 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -42,7 +42,7 @@ CREATE TABLE `apiary_admin` (
 --
 
 INSERT INTO `apiary_admin` (`id`, `admin_name`, `admin_pass`, `date_created`, `security_question`, `security_question_answer`) VALUES
-(1, 'Admin', 'password', '2019-10-10 07:53:58', 'Where were you when you had your first kiss?', 'Theatre');
+(1, 'Admin', 'password', '2019-10-10 07:53:58', 'Who was your childhood hero?', 'Deadpool');
 
 -- --------------------------------------------------------
 
@@ -56,16 +56,17 @@ CREATE TABLE `apiary_hive_1` (
   `harvest` varchar(20) NOT NULL,
   `temperature` int(11) NOT NULL,
   `produc` int(11) NOT NULL,
-  `date_added` datetime DEFAULT NULL
+  `date_added` datetime DEFAULT NULL,
+  `img_path` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `apiary_hive_1`
 --
 
-INSERT INTO `apiary_hive_1` (`id`, `weight`, `harvest`, `temperature`, `produc`, `date_added`) VALUES
-(1, 5, 'Ready', 31, 80, '2019-10-09 13:50:19'),
-(2, 4.5, 'Not Ready', 27, 76, '2019-10-10 10:45:17');
+INSERT INTO `apiary_hive_1` (`id`, `weight`, `harvest`, `temperature`, `produc`, `date_added`, `img_path`) VALUES
+(1, 5, 'Ready', 31, 80, '2019-10-09 13:50:19', 'images/bee3.jpg'),
+(2, 4.5, 'Not Ready', 27, 76, '2019-10-10 10:45:17', 'images/bee2.jpg');
 
 -- --------------------------------------------------------
 
@@ -79,15 +80,16 @@ CREATE TABLE `apiary_hive_2` (
   `harvest` varchar(10) NOT NULL,
   `temperature` int(11) NOT NULL,
   `produc` int(11) NOT NULL,
-  `date_added` datetime DEFAULT NULL
+  `date_added` datetime DEFAULT NULL,
+  `img_path` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `apiary_hive_2`
 --
 
-INSERT INTO `apiary_hive_2` (`id`, `weight`, `harvest`, `temperature`, `produc`, `date_added`) VALUES
-(1, 2.5, 'NOT READY', 31, 60, '2019-10-10 12:03:35');
+INSERT INTO `apiary_hive_2` (`id`, `weight`, `harvest`, `temperature`, `produc`, `date_added`, `img_path`) VALUES
+(1, 2.5, 'NOT READY', 31, 60, '2019-10-10 12:03:35', 'images/bee.png');
 
 --
 -- Indexes for dumped tables

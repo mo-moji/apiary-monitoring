@@ -44,6 +44,7 @@
                 <th>Temp</th>
                 <th>Productivity</th>
                 <th>Harvest</th>
+                <th>Image</th>
               </tr>
             <?php 
               $sql = "SELECT * FROM apiary_hive_1;";
@@ -58,6 +59,11 @@
                       <td><?php echo $row['temperature']."°C";?></td>
                       <td><?php echo $row['produc']."%";?></td>
                       <td class="harvest"><?php echo $row['harvest'];?></td>
+                      <td><button class="open-apiary-image">See image</button></td>
+                      <div class="apiary-image">
+                        <button class="close-apiary-image"><i class="fa fa-times-circle"></i></button>
+                        <img src="<?php echo $row['img_path'];?>" alt="">
+                      </div>
                     </tr>
             
                   <?php
@@ -80,6 +86,7 @@
                 <th>Temp</th>
                 <th>Productivity</th>
                 <th>Harvest</th>
+                <th>Images</th>
               </tr>
             <?php 
               include 'connect.php';
@@ -95,6 +102,11 @@
                       <td><?php echo $row['temperature']."°C";?></td>
                       <td><?php echo $row['produc']."%";?></td>
                       <td class="harvest"><?php echo $row['harvest'];?></td>
+                      <td><button class="open-apiary-image">See image</button></td>
+                      <div class="apiary-image">
+                        <button class="close-apiary-image"><i class="fa fa-times-circle"></i></button>
+                        <img src="<?php echo $row['img_path'];?>" alt="">
+                      </div>
                     </tr>
             
                   <?php
@@ -116,6 +128,20 @@
     
   </div><!-- hive wrapper end -->
   
+  <div class="about-wrapper">
+    <div class="about">
+      <div class="left-content">
+        <h1>MARVEL</h1>
+        <h2>Apiary Monitoring System Using Image Processing</h2>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quos, ut et maiores sit esse? Officiis quibusdam, totam, eum id nemo fugit asperiores inventore suscipit quasi eaque perferendis dolore nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cupiditate possimus sint magnam doloremque adipisci rem iure nemo ea, inventore illo odit minima deserunt corrupti unde eaque maiores. Aspernatur, assumenda!</p>
+        </div>
+        
+      </div>     
+    </div>  
+  </div>
 
+  <div class="space">
+  </div>
   
 </main>

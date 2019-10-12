@@ -42,11 +42,11 @@
           <div class="admin-change-name">
             <input type="text" name="new-username" placeholder="New Username">
             <button name="change-name" type="submit">Update</button>
-            <a id="change-name-cancel" href="">cancel</a>
+            <a id="change-name-cancel" href="#">cancel</a>
           </div>
         </div>
-        <hr>
-        <div class="security-questions">
+        <!-- <hr> -->
+        <!-- <div class="security-questions">
           <p class="title">Security Question <div class="title-line-small"></div></p>
           <p><?php echo $securityQuestion." ".$securityQuestionAnswer;?></p>
           <a id="select-questions-button" href="#">Edit</a>
@@ -62,9 +62,9 @@
             </select>
             <input type="text" name="secret-question-answer" placeholder="Answer">
             <button id="update-questions" name="update-questions" type="submit">Update</button>
-            <a id="close-questions" href="">cancel</a>
+            <a id="close-questions" href="#">cancel</a>
           </div>
-        </div>
+        </div> -->
         
         <hr>
         <div class="change-password-button">
@@ -78,7 +78,7 @@
             <input name="new-password" type="password" placeholder="New Password">
             <p class="error"><?php echo $passErr;?></p>
             <button name="change-password" type="submit">Update</button>
-            <a id="close-change-password" href="">cancel</a>
+            <a id="close-change-password" href="#">cancel</a>
           </div>
         </div>
         <button class="logout-btn" name="logout" type="submit">Log out</button>
