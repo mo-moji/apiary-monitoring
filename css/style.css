@@ -90,6 +90,12 @@ header .admin-login-wrapper {
           justify-content: center;
 }
 
+header .admin-login-wrapper .error {
+  color: #fd2525;
+  font-size: 14px;
+  text-align: left;
+}
+
 header .admin-login-wrapper .admin-login {
   height: 270px;
   display: -webkit-box;

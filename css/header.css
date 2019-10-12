@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -60,6 +61,12 @@ header .admin-login-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .admin-login-wrapper .error {
+  color: #fd2525;
+  font-size: 14px;
+  text-align: left;
 }
 
 header .admin-login-wrapper .admin-login {

@@ -10,6 +10,10 @@
       if ($loginPassword == $row['admin_pass']) {
         $_SESSION['login'] = true;
         header("location:../index.php?login=success");
+        break;
+      }else {
+        $_SESSION['login'] = false;
+        header("location:../index.php?login=failed");
       }
     }
     

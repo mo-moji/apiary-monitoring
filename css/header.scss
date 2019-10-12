@@ -21,7 +21,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    .error{
+      color: rgb(253, 37, 37);
+      font-size: 14px;
+      text-align: left;
+    }
     .admin-login {
       height: 270px;
       display: flex;

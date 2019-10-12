@@ -33,7 +33,7 @@ const system = ()=>{
 
   const openApiaryImage = document.querySelectorAll("button.open-apiary-image");
   const closeApiaryImage = document.querySelectorAll("button.close-apiary-image");
-  const apiaryImage = document.querySelectorAll("div.apiary-image")
+  const apiaryImage = document.querySelectorAll("div.apiary-image");
   //initializations end
 
   ////// js for apiary image/////////////////////////////////////////
